@@ -1,0 +1,21 @@
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_pane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <!--First child is the left pane-->
+    <fragment android:name="com.example.slidingpanelayoutexample.fragments.ListFragment"
+              android:id="@+id/left_pane"
+              android:layout_width="280dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"/>
+
+    <!--This second child is the right content pane-->
+    <fragment android:name="com.example.slidingpanelayoutexample.fragments.MapFragment"
+              android:id="@+id/content_pane"
+              android:layout_width="600dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"/>
+
+</android.support.v4.widget.SlidingPaneLayout>
